@@ -647,6 +647,7 @@ header {
    color: #FFF;
    font-size: 16px;
    font-style: normal;
+   font-weight: 500;
    line-height: 1.5;
    /* 150% */
    letter-spacing: 0.02em;
@@ -671,7 +672,7 @@ header {
    font-size: 12px;
    line-height: 2.0;
    /* 200% */
-   letter-spacing: 0.02em;
+   letter-spacing: 0.04em;
 }
 
 .footer-input::placeholder {
@@ -679,25 +680,28 @@ header {
 }
 
 .footer-form-btn {
+   min-width: 165px;
    color: #FFF;
    text-align: center;
    font-size: 16px;
    font-weight: 500;
    line-height: 1.5;
    /* 150% */
-   letter-spacing: 0.03em;
+   letter-spacing: 0.04em;
    display: inline-flex;
    padding: 8px 24px;
    justify-content: center;
    align-items: center;
-   gap: 16px;
+   /* gap: 16px; */
    border-radius: 4px;
    background: #4D5AE5;
    border: none;
+   cursor: pointer;
 }
 
 .footer-form-icon {
    fill: #FFFFFF;
+   margin-left: 16px;
 }
 
 .footer-form-btn:hover {
@@ -742,7 +746,7 @@ header {
    background-color: #FCFCFC;
    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   padding: 24px;
+   padding: 72px 24px 24px 24px;
 }
 
 .modal-close-btn {
@@ -789,7 +793,6 @@ header {
    letter-spacing: 0.02em;
    display: flex;
    justify-content: center;
-   margin-top: 48px;
    margin-bottom: 16px;
 }
 
@@ -801,6 +804,10 @@ header {
    margin-bottom: 8px;
 }
 
+.modal-filed-comment {
+   margin-bottom: 16px;
+}
+
 .modal-input-wrap {
    position: relative;
 }
@@ -810,6 +817,7 @@ header {
    left: 16px;
    top: 50%;
    transform: translateY(-50%);
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input {
@@ -818,8 +826,9 @@ header {
    border: 1px solid rgba(46, 47, 66, 0.40);
    height: 40px;
    background-color: transparent;
-   padding-left: 50px;
+   padding-left: 38px;
    outline: transparent;
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -850,7 +859,7 @@ header {
    font-size: 12px;
    line-height: 1.17;
    /* 116.667% */
-   letter-spacing: 0.02em;
+   letter-spacing: 0.04em;
    margin-bottom: 4px;
 }
 
@@ -863,6 +872,11 @@ header {
    padding: 8px 16px;
    outline: transparent;
    resize: none;
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.04em;
+   color: rgba(46, 47, 66, 0.4);
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text:focus {
@@ -885,7 +899,7 @@ header {
    font-size: 12px;
    line-height: 1.17;
    /* 116.667% */
-   letter-spacing: 0.02em;
+   letter-spacing: 0.04em;
    align-items: center;
 }
 
@@ -898,7 +912,7 @@ header {
    text-decoration-line: underline;
 }
 
-.check-text span {
+.check-text-span {
    margin-right: 8px;
    width: 16px;
    height: 16px;
@@ -909,6 +923,8 @@ header {
    align-items: center;
    justify-content: center;
    fill: transparent;
+   border-radius: 2px;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-input:checked+.check-text span {
@@ -917,9 +933,9 @@ header {
    fill: #F4F4FD;
 }
 
-.check-icon {
-   ?
-}
+.check-icon {}
+
+.check-link {}
 
 /** ----last modal window----- */
 
