@@ -591,7 +591,9 @@ header {
    max-width: 264px;
 }
 
-.footer-soc {}
+.footer-soc {
+   margin-right: 80px;
+}
 
 .footer-soc-text {
    color: #FFF;
@@ -807,6 +809,52 @@ header {
    color: #4d5ae57e;
 }
 
+.check-input {}
+
+.modal-filed-check {
+   margin-bottom: 24px;
+}
+
+.check-text {
+   color: #8E8F99;
+   font-size: 12px;
+   line-height: 1.17;
+   /* 116.667% */
+   letter-spacing: 0.02em;
+   align-items: center;
+}
+
+.check-text a {
+   color: #4D5AE5;
+   /* Link Text */
+   font-size: 12px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
+   text-decoration-line: underline;
+}
+
+.check-text span {
+   margin-right: 8px;
+   width: 16px;
+   height: 16px;
+   border-radius: 3px;
+   border: 1px solid rgba(46, 47, 66, 0.40);
+   stroke-opacity: 0.4;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   fill: transparent;
+}
+
+.check-input:checked+.check-text span {
+   background-color: #404BBF;
+   border: none;
+   fill: #F4F4FD;
+}
+
+.check-icon {
+   ?
+}
 
 /** ----last modal window----- */
 
