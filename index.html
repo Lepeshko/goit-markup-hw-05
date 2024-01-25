@@ -490,23 +490,29 @@
         <div class="footer-subscribe">
           <p class="footer-subscribe-text">Subscribe</p>
           <form class="footer-form">
-            <input
-              type="email"
-              name="footer-email"
-              required
-              class="footer-input"
-              placeholder="E-mail"
-              aria-label="footer input"
-              id=""
-            />
-            <button type="submit" class="footer-form-btn">Subscribe</button>
+            <label for="footer-email" class="footer-label">
+              <input
+                type="email"
+                name="footer-email"
+                required
+                class="footer-input"
+                placeholder="E-mail"
+                id="footer-email"
+              />
+            </label>
+            <button type="submit" class="footer-form-btn">
+              Subscribe
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
 
     <!-- MODAL WINDOW -->
-    <div class="backdrop 'is-open'">
+    <div class="backdrop is-open'">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -516,7 +522,7 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-filed">
-            <label for="user-name" class="modal-lable">Name</label>
+            <label for="user-name" class="modal-label">Name</label>
             <div class="modal-input-wrap">
               <input
                 type="text"
@@ -532,7 +538,7 @@
             </div>
           </div>
           <div class="modal-filed">
-            <label for="user-phone" class="modal-lable">Phone</label>
+            <label for="user-phone" class="modal-label">Phone</label>
             <div class="modal-input-wrap">
               <input
                 type="tel"
@@ -548,7 +554,7 @@
             </div>
           </div>
           <div class="modal-filed">
-            <label for="user-email" class="modal-lable">Email</label>
+            <label for="user-email" class="modal-label">Email</label>
             <div class="modal-input-wrap">
               <input
                 type="email"
@@ -564,7 +570,7 @@
             </div>
           </div>
           <div class="modal-filed">
-            <label for="user-comment" class="modal-lable">Comment</label>
+            <label for="user-comment" class="modal-label">Comment</label>
             <textarea
               name="user-comment"
               id="user-comment"
